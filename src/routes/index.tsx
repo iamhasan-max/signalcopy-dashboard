@@ -451,7 +451,7 @@ function Landing() {
                   ["Is MT5 required?", "No. MT5 is optional. You can use SignalCopy purely to monitor Telegram signals."],
                   ["Does SignalCopy guarantee trading profits?", "SignalCopy is software for automation and monitoring. It does not guarantee profits or trading performance."],
                 ].map(([q, a]) => (
-                  <AccordionItem key={q} value={q} className="border-border">
+                  <AccordionItem key={q} value={q as string} className="border-border">
                     <AccordionTrigger className="text-left text-[15.5px] font-medium text-ink hover:no-underline">
                       {q}
                     </AccordionTrigger>
@@ -512,7 +512,7 @@ function Landing() {
                   ["Contact", "#"],
                 ].map(([l, h]) => (
                   <li key={l}>
-                    <a href={h} className="transition-colors hover:text-ink">
+                    <a href={h as string} className="transition-colors hover:text-ink">
                       {l}
                     </a>
                   </li>
